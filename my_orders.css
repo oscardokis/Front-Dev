@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --green-primary:rgba(172, 217, 178, 1);
+    --input-gray-background:rgba(247, 247, 247, 1);
+    --input-letters:rgba(121, 121, 121, 1);
+    --black-letters:rgba(0, 0, 0, 1);
+
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgba(255, 255, 255, 1);
+}
