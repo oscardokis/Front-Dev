@@ -15,3 +15,14 @@ html{
     font-family: 'Quicksand', sans-serif;
     background-color: rgba(255, 255, 255, 1);
 }
+h1{
+    text-align: center;
+    margin-top: 20px;
+}
+.main_myorders{
+    height: 100%;
+    width: 100%;
+    margin: 35px 19px 0 19px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
