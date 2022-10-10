@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --green-primary:rgba(172, 217, 178, 1);
+    --input-gray-background:rgba(247, 247, 247, 1);
+    --input-letters:rgba(121, 121, 121, 1);
+    --black-letters:rgba(0, 0, 0, 1);
+
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgba(255, 255, 255, 1);
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2rem;
+    color: rgba(0, 0, 0, 1);
+}
+.main_myorder{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px auto;
+    padding-left: 19px;
+    padding-right: 19px;
+    
+}
+
+.cart-items{
+    height: 80px;
+    width: 100%;
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.Name-img{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.Name-img figure img{
+    height: 76px;
+    width: 76px;
+    border-radius: 25%;
+}
+.Name-img>p{
+    padding-left: 17px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    color: var(--input-letters);
+}
+.cart-items .price{
+    justify-self: self-end;
+    padding-right: 13px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.875rem;
+    color: rgba(64, 64, 64, 1);
+}
+.my-items{
+    height: 76px;
+    width: 100%;
+    min-width: 250px;
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--input-gray-background);
+    border-radius: 10px;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 20px;
+     
+}
+.my-items p:nth-child(1){
+    justify-self: self-start;
+    padding-left: 18px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2rem;
+    color: rgba(0, 0, 0, 1);
+    display: flex;
+    flex-direction: column;
+}
+.my-items p:nth-last-child(1){
+    justify-self: self-end;
+    font-family: 'Roboto', sans-serif;
+    padding-right: 13px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.875rem;
+    color: rgba(64, 64, 64, 1);
+}
+.main_button{
+    width: 90%;
+    margin: 0 auto;
+    height: 59px;
+    background-color: var(--green-primary);
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.25rem;
+    padding: 18 auto;
+    border: none;
+    max-width: 400px;
+    border-radius: 10px;
+}
