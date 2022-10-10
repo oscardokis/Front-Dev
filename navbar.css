@@ -87,13 +87,21 @@ nav{
 }
 @media(max-width: 750px){
     .menumin{
-        display: flex;
+        display: block;
     }
     nav{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        place-items: center;
     }
+   nav .left-side-navbar{
+    margin: 0;
+    position: static;
+   }
+   nav .right-side-navbar{
+    margin: 0;
+    position: static;
+   }
     .nav-bar-desktop{
         display: none;
     }
