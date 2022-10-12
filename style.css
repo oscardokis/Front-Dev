@@ -305,7 +305,6 @@ nav{
 .home{
     margin: 10px auto;
     width: 100%;
-    max-width: 390px;
 }
 .home_input{
     width: 90%;
@@ -339,12 +338,18 @@ nav{
     align-items: center;
 }
 .home_stuff ul li{
-    padding: 5px 10px;
+    padding: 5px 2px;
     list-style: none;
 }
 .home_stuff>ul li a{
     text-decoration: none;
     color: rgba(199, 199, 199, 1);
+    padding: 5px 10px;
+    list-style: none;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 500;
+
 }
 .home_stuff>ul li:first-child{
     color: var(--green-primary);
@@ -354,7 +359,69 @@ nav{
 .home_stuff>ul li:first-child a{
     color: var(--green-primary);
 }
-
+.home_type-order{
+    font-size: 1.4rem;
+    line-height: 1.75rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.home_type-order p{
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+}
+.home_type-order span{
+    font-weight: 400;
+    color: rgba(121, 121, 121, 1);
+}
+.home_type-order img{
+    margin-left: 5px;
+}
+.home_products{
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(140px, auto));
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.home_product_self{
+    position: relative;
+    padding-bottom: 10px;
+}
+.home_product_self>img{
+    width: 100%;
+    object-fit: contain;
+}
+.home_product_self p:nth-child(2){
+    margin-top: 5px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.875rem;
+    color: rgba(64, 64, 64, 1);
+}
+.home_product_self p:nth-child(3){
+    font-size: 1.4rem;
+    margin-top: 5px;
+    font-weight: 400;
+    line-height: 1.75rem;
+    color: rgba(121, 121, 121, 1);
+}
+.home_product_self_car{
+    background-color: var(--green-primary);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 8px;
+    right: 15px;
+}
 .inactive{
     display: none;
 }
